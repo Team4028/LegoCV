@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0017CDA02138ACE10076B4ED /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0017CD9F2138ACE00076B4ED /* opencv2.framework */; };
 		381F15091E2AA1D50072F870 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381F15081E2AA1D50072F870 /* opencv2.framework */; };
 		381F150B1E2AA22A0072F870 /* LegoCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4D4B01E2AA01F008AAAB0 /* LegoCV.framework */; };
 		381F150C1E2AA22A0072F870 /* LegoCV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4D4B01E2AA01F008AAAB0 /* LegoCV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -225,7 +226,6 @@
 		386F2B841E3524D300320AEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386F2B811E3524D300320AEB /* UIKit.framework */; };
 		386F2B871E352A4800320AEB /* OCVPointerObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 386F2B851E352A4800320AEB /* OCVPointerObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		386F2B881E352A4800320AEB /* OCVPointerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 386F2B861E352A4800320AEB /* OCVPointerObject.m */; };
-		389718651E36170F00CB02B4 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 389718641E36170F00CB02B4 /* data */; };
 		389718691E36175E00CB02B4 /* LiveCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389718681E36175E00CB02B4 /* LiveCameraVC.swift */; };
 		3897186B1E36176B00CB02B4 /* FaceRecognitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3897186A1E36176B00CB02B4 /* FaceRecognitionVC.swift */; };
 		3897186D1E3618B200CB02B4 /* FaceRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3897186C1E3618B200CB02B4 /* FaceRecognizer.swift */; };
@@ -391,6 +391,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0017CD9F2138ACE00076B4ED /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = LegoCV/opencv2.framework; sourceTree = SOURCE_ROOT; };
 		381F15081E2AA1D50072F870 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../ios/opencv2.framework; sourceTree = "<group>"; };
 		383BC40E1E2FF974002EA7A1 /* OCVObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVObject.h; sourceTree = "<group>"; };
 		383BC40F1E2FF974002EA7A1 /* OCVObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVObject.m; sourceTree = "<group>"; };
@@ -605,7 +606,6 @@
 		386F2B811E3524D300320AEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		386F2B851E352A4800320AEB /* OCVPointerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCVPointerObject.h; sourceTree = "<group>"; };
 		386F2B861E352A4800320AEB /* OCVPointerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCVPointerObject.m; sourceTree = "<group>"; };
-		389718641E36170F00CB02B4 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = ../../opencv/data; sourceTree = "<group>"; };
 		389718681E36175E00CB02B4 /* LiveCameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCameraVC.swift; sourceTree = "<group>"; };
 		3897186A1E36176B00CB02B4 /* FaceRecognitionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceRecognitionVC.swift; sourceTree = "<group>"; };
 		3897186C1E3618B200CB02B4 /* FaceRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceRecognizer.swift; sourceTree = "<group>"; };
@@ -758,6 +758,7 @@
 				389718931E3643B600CB02B4 /* QuartzCore.framework in Frameworks */,
 				386F2B841E3524D300320AEB /* UIKit.framework in Frameworks */,
 				381F15091E2AA1D50072F870 /* opencv2.framework in Frameworks */,
+				0017CDA02138ACE10076B4ED /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,7 +828,7 @@
 		389718631E3616D400CB02B4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				389718641E36170F00CB02B4 /* data */,
+				0017CD9F2138ACE00076B4ED /* opencv2.framework */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1815,7 +1816,7 @@
 				TargetAttributes = {
 					38B4D4AF1E2AA01F008AAAB0 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 289M6XEDV4;
+						DevelopmentTeam = 9PNHQ3XQ2M;
 						ProvisioningStyle = Automatic;
 					};
 					38B4D4B81E2AA01F008AAAB0 = {
@@ -1871,7 +1872,6 @@
 			files = (
 				38B4D4DD1E2AA111008AAAB0 /* LaunchScreen.storyboard in Resources */,
 				38B4D4DA1E2AA111008AAAB0 /* Assets.xcassets in Resources */,
-				389718651E36170F00CB02B4 /* data in Resources */,
 				38B4D4D81E2AA110008AAAB0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2195,11 +2195,14 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 289M6XEDV4;
+				DEVELOPMENT_TEAM = 9PNHQ3XQ2M;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = ../ios;
+				FRAMEWORK_SEARCH_PATHS = (
+					../ios,
+					"$(PROJECT_DIR)/LegoCV",
+				);
 				INFOPLIST_FILE = LegoCV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2215,11 +2218,14 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 289M6XEDV4;
+				DEVELOPMENT_TEAM = 9PNHQ3XQ2M;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = ../ios;
+				FRAMEWORK_SEARCH_PATHS = (
+					../ios,
+					"$(PROJECT_DIR)/LegoCV",
+				);
 				INFOPLIST_FILE = LegoCV/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
